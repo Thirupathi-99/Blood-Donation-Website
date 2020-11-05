@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body onload="setTimeout(fun,3000)">
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>LIFE SAVERS</h1>
+<hr>
+
+<h2>DOCTORS</h2>
+<p>A doctor's schedule will differ depending on the kind of medicine they practice. Some doctors work in an office, others in the hospital,
+ and some in places you may not think of, like laboratories where they develop new medicines and research cures.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="d1.jfif" alt="Mountains" style="width:100%">
+      <h3>Robbert Flue,MBBS</h3>
+      <p>Hailed from california and trained internal medicine physician and Chief Medical Officer of Compass Professional Health Services. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="d2.jfif" alt="Lights" style="width:100%">
+      <h3>Ramesh Chandra,MBBS</h3>
+      <p>Chief surjon in curing blood dieseases Dr.chandra has published research on the quality of diabetes care and treatment of hospital-acquired infections. </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="d4.jfif" alt="Nature" style="width:100%">
+      <h3>Dr.BrickeL</h3>
+      <p>Chief surjon in curing blood dieseases Dr.Brickel has published research on the quality of diabetes care and treatment of hospital-acquired infections</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="f1.png" alt="Mountains" style="width:100%" >
+      <h3>Dr.Robert clae</h3>
+      <p>Chief surjon in curing blood dieseases Dr.Clae has published research on the quality of diabetes care and treatment of hospital-acquired infections.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="content">
+  <img src="hos.jfif" alt="Bear" style="width:100%" height="400">
+  <h3>Deatails:</h3>
+  <p>From their inception in Byzantium, hospitals evolved within a Christian religious framework of hospitality and charity, providing primarily shelter,
+ food, and a good death with spiritual salvation. Often, medical services were marginal, contracted to deal with associated physical disabilities and pain. 
+With poverty endemic by the late fifteenth century in many areas of Europe, the emphasis shifted away from broadly dispensed hospitality to the "poor of 
+Jesus Christ." Charity was no longer conceived as either private or religious. With almsgiving dwindling because of wars and economic crises, social welfare
+ needed to be reformed and rationed, a function increasingly delegated by the church to the contemporary secular powers.</p></div>
+<!-- END MAIN -->
+</div>
+<script>
+function fun()
+{
+alert("Hospitals and Doctors are present temples and gods on the earth");
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>
+#my_form
+{
+background-color: transparent;
+}
+body{
+background:url("login 3 image.jpg");
+background-size:cover;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+
+<h1><center>POST YOUR BLOOD REQUEST ONLINE</center></h1>
+
+<div>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	<label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email here..">
+	
+	<label for="ctno">Contact no.</label>
+    <input type="text" id="ctno" name="ctno" placeholder="Your contact number..">
+	
+	<label for="date">When required</label>
+    <input type="text" id="date" name="date" placeholder="DD-MM-YYYY..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+	
+	<label for="district">District</label>
+    <select id="district" name="district">
+      <option value="bilaspur">Bilaspur</option>
+      <option value="mandi">Mandi</option>
+      <option value="shimla">Shimla</option>
+    </select>
+	
+	<label for="blood_group">Blood group</label>
+    <select id="blood_group" name="blood_group">
+      <option value="ab+">AB+</option>
+      <option value="ab-">AB-</option>
+      <option value="o+">O+</option>
+	  <option value="o-">O-</option>
+	  <option value="a+">A+</option>
+	  <option value="a-">A-</option>
+	  <option value="b+">B+</option>
+	  <option value="b-">B-</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+﻿<html>
+<head>
+<style>
+.t4 {
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+height:30px;
+padding:10px;
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+.t2
+{
+border-radius:150px;
+border:5px solid green;
+overflow: hidden;
+}
+.header1{
+
+float:middle;
+align:100px;
+}
+#searchbox{width:500px;
+height:26px;
+background:white;
+padding-left:50px;
+outline:none;
+border-radius: 10px/10px;
+
+}
+body
+{
+background-size:800px 800px;
+background-color: yellow;
+}
+ul.in
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333;
+}
+li
+{
+float:left;
+}
+li a
+{
+display:block;
+color:white;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+}
+li a:hover:not(.active)
+{
+background-color:#111;
+}
+.active
+{
+background-color:w;
+}
+li.t1 a
+{
+text-align:left;
+display:block;
+width:180px;
+height:10px;
+padding:20px 20px;
+}
+.grid-container
+{
+align:center;
+background-image:url("cric1.jfif");
+display:grid;
+grid-template-areas:
+'h1 h3 h4'
+'h1 h6 h7'
+'h8 h8 h8'
+'h9 h9 h9';
+grid-gap:10px;
+ 
+
+}
+.grid-container > div 
+{
+
+text-align: center;
+padding: 20px;
+font-size;30px;
+}
+.item1{ 
+grid-area: h1;
+width:250px;
+height:500px;
+font-size:20px;
+background-color:green;
+}
+.item6{ grid-area:h6;}
+.item4{ grid-area: h4; }
+
+.item7{ grid-area: h7; }
+.item8{ grid-area: h8;
+ }
+.item9{ grid-area:h9;}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<ul class="in">
+<li><a class="active"
+href="">HOME</a></li>
+<li ><a href="images - Copy.html">Images</a></li>
+<li><a href="signup doctors.html">registor for doctors</a></li>
+<li><a href="c.html">Contact</a></li>
+<li><a href="about us.html">About</a></li></ul>
+<br><br><form method="get" onsubmit="fun()">
+<input placeholder="search here..." type="text" id="searchbox" name="d">
+<input type="submit" >
+
+</form>
+<script>
+function fun()
+{
+var z=document.getElementById("searchbox").value;
+if(z=='hyderabad')
+{
+window.open("donor.html");
+}
+if(z=='banglore')
+{
+window.open("tht.html");
+}
+if(z=='vijayavada')
+{
+window.open("yty.html");
+}
+}
+</script>
+
+<div class="grid-container">
+<div class="item1">
+<ul type=disc>  
+   <li class="t1"><a href="bd1.html">BLOOD DONATION</a></li>
+   <li class="t1"><a href="bd2.html">TYPES</a></li>
+   <li class="t1"><a href="bd3.html">TIPS</a></li>
+   <li class="t1"><a href="bd4.html">WHY WE DONATE</a></li>
+   <li class="t1"><a href="bd5.html">WHO NEEDS</a></li>
+   <li class="t1"><a href="bh6.html">ELIGIBILITY</a></li>
+   <li class="t1"><a href="bd7.html">BLOOD FACTS</a></li>
+   <li class="t1"><a href="bd8.html">PREPARING</a></li>
+   <li class="t1"><a href="bd9.html">BLOOD DISEASES</a></li>
+</ul></div>
+
+
+<div class="item3">
+<a href="blood 1.html"> 
+<img  class="t2" src="jaja.jpg" alt="sputnik" height="250" width="250" align="left" id="t2"onmouseover="fun33( )"  onmouseout="fun44()"></a></div>
+<div class="item4">
+<a href="doners.html"> 
+<img  class="t2" src="download.png" alt="sputnik" height="250" width="250" align="left" id="t3" onmouseover="fun55( )"  onmouseout="fun66()"></a></div>
+
+<div class="item6">
+<a href="login page.html"> 
+<img  class="t2" src="vampire.png" alt="sputnik" height="250" width="250" align="left" id="t5" onmouseover="fun99( )"  onmouseout="fun100()"></a></div>
+<div class="item7">
+<a href="emergency donation.html"> 
+<img  class="t2" src="emergency.jpg" alt="sputnik" height="250" width="250" align="left" id="t6" onmouseover="fun111( )"  onmouseout="fun122()"></a></div>
+<div class="item8">
+<video controls height = "400";width="600"; autoplay> 
+<source src="video.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+<div class="item9">
+<marquee><img src="emg.jpg"  height="300" width="500" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="image15.jpg"  height="300" width="500" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="emergency.jpg"  height="300" width="500" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="downloa.jfif"  height="300" width="500" ><h1> The blood you donate gives someone another chance at life. One day that someone may be a close relative, a friend, a loved one—or even you.</h1></marquee></div>
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+
+<footer>
+<center>
+<div class="t4">
+All rights reserved @ home
+</div>
+</center>
+</footer>
+
+</html>

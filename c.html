@@ -1,0 +1,143 @@
+﻿<html>
+<head>
+<style>
+body
+{ background-image:url("contact.jfif");
+background-size:cover;}
+#wrapper{
+width:100%;
+display: -webkit-box;
+-webkit-box-pack:center;
+-webkit-box-orient:horizontal;
+margin-top:60px;
+}
+div.box
+{
+height: 200px;
+width: 200px;
+margin-right: 7px;
+border-radius: 100px;
+border-size:5px;
+border-color: solid white;
+overflow: hidden;
+box-shadow: rgda(0,0,0,0.5) 10px10px;
+}
+div.box img
+{
+border-radius:100px;
+}
+div.box div
+{
+width: 200px;
+height:105px;
+background: #000;
+text-align: center;
+border-radius:100px;
+padding: 95px 0 0 0;
+color:white;
+}
+
+div.effect1 div
+{
+position:absolute;
+top:85px;
+left:325px;
+opacity: 0;
+transition: opacity 700ms;
+color: white;
+}
+div.effect1 div:hover{
+opacity: 0.8; }
+div.effect2 img{
+position: absolute;
+transition: margin-left 800ms;
+color:white;
+}
+div.effect2 img
+{
+position:absolute;
+top:0
+left:400px;
+transition:margin-left 800ms;
+color: white; 
+}
+div.effect2:hover img{ margin-left: 200px;}
+div.effect3 img{
+
+position:absolute;
+transition: margin-left 800ms;
+color: white;
+}
+div.effect3:hover img{
+margin-left:200px;
+}
+div.effect4 img{
+
+position:absolute;
+transition: margin-left 800ms;
+color: white;
+}
+div.effect4:hover img{
+margin-left:200px;
+}
+.t1{ padding-left:300px;
+margin-top:50px;
+height:300px;
+width:50%;}
+</style>
+</head>
+<meta charset="UTF-8">
+<title>css</title>
+<body>
+<div id="header"><i>contact us</i></div>
+<div id="wrapper">
+<div class="box effect1">
+<img src="d1.jfif" height="200px" width="200px"/>
+<div class="text"> <p> Details:
+    Name:thirupathi<br>
+             Qualification:MBBS<br>
+             ph num:9876543210
+<a href="#">to know more</a></p></div>
+</div>
+<div class="box effect2">
+<img src="d2.jfif" height="200px" width="200px"/>
+<div class="text"><p> Details:
+    Name:Rohith<br>
+             Qualification:MBBS<br>
+             ph num:9876543210
+<a href="#">to know more</a></p> </div>
+</div>
+<div class="box effect3">
+<img src="d4.jfif" height="200px" width="200px"/>
+<div class="text"><p> Details:
+    Name:Akilesh<br>
+             Qualification:MBBS<br>
+             ph num:9876543210
+<a href="#">to know more</a></p></div>
+</div>
+<div class="box effect4">
+<img src="d4.jfif" height="200px" width="200px"/>
+<div class="text"><p> Details:
+    Name:sravanthi<br>
+             Qualification:MBBS<br>
+             ph num:9876543210
+<a href="#">to know more</a></p></div>
+</div>
+</div>
+
+<script>
+function fun1( )
+{
+document.getElementById("t3").src="donor1.jfif";
+document.getElementById("t3").style.height="400";
+document.getElementById("t3").style.width="600";
+
+}
+function fun2()
+{
+document.getElementById("t3").src="donor2.jfif";
+document.getElementById("t3").style.height="300";
+document.getElementById("t3").style.width="500";
+}
+</script>
+</html>

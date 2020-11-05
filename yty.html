@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-image:url("b1.png");
+background-size:cover;
+}
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+margin-left:300px;
+margin-top:10px;
+width:50%;
+
+}
+.p1{ margin-top: 10px;
+}
+.p2{ padding-right:20px;
+display:block;
+border-radius:5px;
+padding:10px;
+background-color:solid grey;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Donors in vijayavada</h2>
+<h3> <b><i>It is essential for surgeries, cancer treatment, chronic illnesses, and traumatic injuries.
+ Whether a patient receives whole blood, red cells, platelets or plasma, this lifesaving care starts with one person making a generous donation.</b></i> </h3>
+
+<div class="p1">
+<div class="container">
+  <img src="donor1.jfif" alt="Avatar" style="width:90px">
+  <p><span><b>Chris Fox.</span> Works at Infosis.</p>
+  <p><span>Blood Group:<i><b>A+</b></i></span>Lives in Hyderabad</p>
+ <p><a href="#">Contact details</a></p>
+</div>
+
+<div class="container">
+  <img src="donor2.jfif" alt="Avatar" style="width:90px">
+  <p><span><b>Rebecca Flex.</span> CEO at Company in Hyderabad Industries.</p>
+  <p><span>Blood Group:<i><b>O+<b></i>.</span>Lives in Hyderabad</p>
+  <p><a href="#">Contact details</a></p>
+</div>
+<div class="container">
+  <img src="donor3.jfif" alt="Avatar" style="width:90px">
+  <p><span>Ramarao.</span> Lecturer in Samatha MBA college .</p>
+  <p><span>Blood Group:<i><b>AB-<b><i></span>Lives in Hyderabad</p>
+ <p><a href="#">Contact details</a></p>
+</div>
+<div class="container">
+  <img src="donor4.jfif" alt="Avatar" style="width:90px">
+  <p><span>Sameth Jain.</span> Software engineer</p>
+  <p><span>Blood Group:<i><b>AB+<b><i></span>Lives in Hyderabad</p>
+ <p><a href="#">Contact details</a></p>
+</div>
+</div>
+<a href="p.html"><input type="button" class="p2" value="Home"></a>
+</body>
+</html>

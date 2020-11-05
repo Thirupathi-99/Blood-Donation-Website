@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp</title>
+
+<style>
+.button
+{
+background-color:orange;
+border:none;
+color:black;
+padding:20px;
+text-align:center;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+}
+.button1{border-radius:16px;
+width:200px;}
+body{
+  margin: 0;
+  padding: 0;
+  background: url("img8.gif");
+  background-size:cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+.wrap{
+	width:350px;
+	margin:auto;
+	background:#00adee;
+	margin-top:50px;
+	padding:5px;
+}
+form{
+	padding:10px;
+	font-family: arial;
+	border:1px dotted white;
+}
+h2{
+	text-align: center;
+	background: orange;
+	color: white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+	padding:10px;
+	margin:5px;
+	border-radius:5px;
+	border:none;
+}
+input[type=text], input[type=email],input[type=number], input[type=password]{
+	width:90%;
+}
+input[type=submit]{
+	width: 95%;
+	background:orange;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+}
+input[type=submit]:hover{
+	background: yellow;
+}
+select{
+	padding:10px;
+	width:32%;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<form>
+<h2>Register For Doctors</h2>
+<p><input type ="text" id="t1"	 name ="Username" placeholder="Username"><br></p>
+<p><input type ="email" id="t2" name ="Email" placeholder="Your Email"><br></p>
+<p><input type ="text" id="t3" name ="Number" placeholder="10 Digit Mobile Number"><br></p>
+<p><input type ="password" id="t4" name ="password" placeholder="Password"><br></p>
+<p><input type ="password" id="t5" name ="Confirm Password" placeholder="Confirm Password"><br></p>
+<p><i>Provide Your Doctor Id:</i><input type="file" id="t6" accept="images/*"></p>
+<input type= "radio" name="Gender" value="male">Male
+<input type= "radio" name="Gender" value="female">Female
+<br>
+<h3/><input type="checkbox">I Agree To the Terms of Use
+<br>
+<center><button class= "button button1" id="t7"><a href ="login page.html">submit</a></button></center>
+</form>
+<script>
+document.getElementById("t7").onclick=function validate()
+	 {
+	                if (document.getElementById("t1").value=="")
+	                {
+	                    alert("Please provide your Username name!");
+	                    document.getElementById("t1").focus();
+	                    return false;
+	                }
+
+							 if (document.getElementById("t2").value=="")
+							 {
+									 alert("Please provide your Email!");
+									 document.getElementById("t2").focus();
+									 return false;
+							 }
+
+							                if (document.getElementById("t3").value=="")
+							                {
+							                    alert("Please provide your 10 Digit Mobile Number!");
+							                    document.getElementById("t3").focus();
+							                    return false;
+							                }
+
+														  if (document.getElementById("t4").value=="")
+														   {
+														     alert("Please provide your Password!");
+														         document.getElementById("t4").focus();
+														            return false;
+														   }
+															 if (document.getElementById("t5").value=="")
+									                 {
+									                     alert("Please provide your Confirm Password!");
+									                     document.getElementById("t5").focus();
+									                     return false;
+									                 }
+												if (document.getElementById("t6").value=="")
+									                 {
+									                     alert("Please provide your File!");
+									                     document.getElementById("t6").focus();
+									                     return false;
+									                 }
+}
+</script>
+</body>
+</html>

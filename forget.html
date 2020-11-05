@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+<style>
+body{ background-image:url("abc.jpg");
+}
+.t1{
+text-align:center;
+margin-top:150px;
+margin-left:500px;
+display:block;
+height:350px;
+width:300px;
+background-color:grey;
+border-radius:40px;
+}
+#b1
+{
+height:40px;
+width:250px;
+border-radius:20px;
+}
+#b1:hover{
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<form method="get">
+<div class="t1">
+<br><br><h3>Please provide your details below</h3>
+<b>Username:</b><input type="text" name="username" required id="u1"><br><br>
+<b>Email-Id:</b>&nbsp;&nbsp;&nbsp<input type="text" name="email" required ><br><br>
+<b>Mobile No:</b><input type="text" name="username" id="m1" required><br><br>
+<center><button id="b1" onclick=setTimeout(fun(),3000)><b>Submit</b></button></center>
+<h3>You will recieve an one time  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp password in 3 sec</h3>
+</form></div>
+<script>
+function fun()
+{
+var y=document.getElementById("m1").value;
+var ph='9876543210';
+if(y!=ph)
+{
+alert("mobile number is an invalid input"); 
+}
+else {
+var paa;
+var usn=document.getElementById("u1").value;
+var ra='sravanthi';
+var d='1234';
+var pass='5647328';
+
+if(usn==ra)
+{
+var otp=prompt("please enter your one time password",paa);
+if(otp==d)
+{
+alert("your password is"+pass);
+}
+else{
+alert("please enter correct password");
+}
+}
+else{ alert("please enter correct username");};
+}}
+</script>
+</body>

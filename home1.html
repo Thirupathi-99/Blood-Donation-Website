@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+ #f1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#f1:hover {
+    opacity: 0.8;
+}
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+body
+{
+background-image:url("blood 2 image.jpg");
+background-size:1600px 900px;
+}
+p1.italic
+{
+font-style:oblique;
+}
+.button
+{
+background-color:#4CAF50;
+border:none;
+color:white;
+padding:20px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size:16px;
+margin:4px 2px;
+cursor:pointer;
+}
+.button1{border-radius:12px;}
+.button2{border-radius:12px;}
+.button3{border-radius:12px;}
+</style>
+<body>
+<header>
+<h1><center><font size="30">BRING A LIFE BACK TO POWER</font></center></h1>
+<h1><center>MAKE BLOOD DONATION</center></h1> 
+</header>
+<br><br><br>
+<p1 class="italic">
+<p style="text-align:right;">
+<font size="40">Nobody can do everything,&nbsp;&nbsp;&nbsp;&nbsp;<br>but everyone can do something&nbsp;&nbsp;&nbsp;&nbsp;</font><br>
+<p2><font color="red">
+<a style="font-size:500%;">DONATE BLOOD</a></p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+<button class="button
+button1" onclick="document.getElementById('id01').style.display='block'" >Home</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button
+button2"><a href="about us.html">Know about us</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="button
+button3"><a href ="c.html">Contact us</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+</p1>
+
+<div id="id01" class="modal">
+  
+  <form  class="modal-content animate" action="/action_page.php" onsubmit="fun()" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="t1" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="t2" required>
+        
+      <button type="submit" id="f1" ><a href="homeee2.html" >Login</a></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+
+var modal = document.getElementById('id01');
+
+s
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+fuction fun()
+{
+var usname="starlab";
+var pass="123456";
+var sna= document.getElementById('t1').value;
+var p=document.getElementById('t2').value;
+if(sna==usname && p==pass)
+{
+windows.open("homeee2.html");
+}
+else
+{
+alert("username or password is incorrect");
+}
+</script>
+</body>
+</html>
